@@ -79,7 +79,11 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text("CANCEL")),
                 // TODO: Add an elevation to NEXT (103)
                 // TODO: Add a beveled rectangular border to NEXT (103)
-                ElevatedButton(onPressed: () {}, child: const Text("NEXT"))
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Text("NEXT"))
               ],
             ),
             // TODO: Add button bar (101)
